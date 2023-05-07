@@ -1,8 +1,8 @@
-import 'package:defecto/screens/result_screen.dart';
-import 'package:defecto/screens/splash_screen.dart';
-import 'package:defecto/screens/upload_screen.dart';
-import 'package:defecto/screens/welcome_screen.dart';
 import 'package:flutter/material.dart';
+import 'modules/screens/result_screen.dart';
+import 'modules/screens/splash_screen.dart';
+import 'modules/screens/upload_screen.dart';
+import 'modules/screens/welcome_screen.dart';
 
 
 void main() {
@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
         SplashScreen.id: (context) => const SplashScreen(),
         WelcomeScreen.id: (context) => const WelcomeScreen(),
         UploadScreen.id: (context) => const UploadScreen(),
-        ResultScreen.id: (context) => const ResultScreen(),
+        ResultScreen.id: (context) =>  ResultScreen(result:""),
 
       },
     );
